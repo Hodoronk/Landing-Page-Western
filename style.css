@@ -2,6 +2,10 @@
     src: url(fonts/rio_grande/RioGrande.ttf);
     font-family:riogrande;
 }
+@font-face{
+    src: url(fonts/western/WEST____.TTF);
+    font-family:westish;
+}
 
 
 
@@ -17,7 +21,6 @@ p{
 .header{
     display:flex;
     justify-content:space-evenly;
-    border:5px solid blue;
     padding:10px;
     background-color:rgb(19, 48, 82);
     color:white;
@@ -33,13 +36,20 @@ h1{
     font-family:riogrande;
     font-size:30px;
     margin-bottom:auto;
-    margin-left:30px;
+    margin-right:auto;
+    margin-left:5px;
+}
+.time{
+    font-family:westish;
+    font-size:30px;
+    margin-left:10px;
 }
 .color-bit{
     color:yellow;
 }
 .header-right{
     flex:1;
+    justify-content:flex-start;
 }
 .header-left{
     display:flex;
@@ -47,6 +57,11 @@ h1{
     border-right:10px solid rgb(24, 61, 102);
     
     }
+
+.normalink{
+    text-decoration:underline;
+    color:rgb(111, 111, 204);
+}
 
 a{
     text-decoration:none;
@@ -61,7 +76,7 @@ ul{
     justify-content:flex-end;
     gap:20px;
     align-items:center;
-    margin-right:200px;
+    margin-right:100px;
 
 }
 
@@ -71,8 +86,10 @@ ul{
     display:flex;
     justify-content:center;
     gap:50px;
-    background-image: url('images/landscape.jpg');
+    background-image: url('images/deser.jpg');
     background-size: cover;
+    border-top:3px solid black;
+    border-bottom: 3px solid black;
 }
 .awesome-left{
     display:flex;
@@ -84,21 +101,24 @@ ul{
     flex-direction:column;
     flex-wrap:wrap;
     margin-right:150px;
-    background: rgba(57, 60, 90 ,0.7);
-    border-radius:5%;
+    background-image: linear-gradient(to right, rgba(221, 221, 20, 0.01),rgba(241, 158, 3, 0.7));
     margin-top:10px;
     margin-bottom:10px;
     align-items:center;
-    border:10px solid peachpuff;
+    border:3px solid black;
+    border-radius:5%;
+    
 
 }
 .textbox{
-    font-family:helvetica;
-    font-size:30px;
+    font-family:westish;
+    font-size:50px;
     margin-right:50px;
     margin-left:50px;
     text-align:justify;
     text-indent:40px;
+    color:rgb(7, 92, 7);
+    text-shadow: 2px 2px black;
 
     
 
@@ -108,7 +128,7 @@ ul{
     font-weight:700;
     font-size:70px;
     color:rgb(255, 255, 255);
-    text-align:center;
+    margin-right:300px;
     text-shadow: 5px 5px black;
 }
 .pecos{
@@ -118,7 +138,8 @@ ul{
     border-style:groove;
     margin-top:30px;
     margin-bottom:30px;
-    box-shadow: 5px 5px rgba(2, 2, 2, 0.7)
+    box-shadow: 5px 5px rgba(2, 2, 2, 0.7);
+    border:3px solid black;
 }
 
 
@@ -128,7 +149,6 @@ ul{
     align-items:center;
     background-image: url(images/brick2.jpg);
     justify-content:center;
-    border-top: 10px solid brown;
     
 }
 .images-text{
@@ -144,6 +164,7 @@ ul{
     width:300px;
     border-style:groove;
     box-shadow:5px rgba(2, 2, 2, 0.7);
+    border:3px solid black;
 }
 
 .image-pair{
