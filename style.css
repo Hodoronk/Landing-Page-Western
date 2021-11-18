@@ -31,7 +31,9 @@ h1{
     font-weight:bold;
     margin-left:300px;
     font-size:50px;
+    text-shadow: 5px 5px rgba(19, 18, 18, 0.5);
 }
+
 .established{
     font-family:riogrande;
     font-size:30px;
@@ -86,7 +88,7 @@ ul{
     display:flex;
     justify-content:center;
     gap:50px;
-    background-image: url('images/deser.jpg');
+    background-image: url(images/deser.jpg);
     background-size: cover;
     border-top:3px solid black;
     border-bottom: 3px solid black;
@@ -119,10 +121,13 @@ ul{
     text-indent:40px;
     color:rgb(7, 92, 7);
     text-shadow: 2px 2px black;
-
-    
-
 }
+.pop{
+    color:red;
+}
+
+
+
 .awesome-text{
     font-family:riogrande;
     font-weight:700;
@@ -134,7 +139,7 @@ ul{
 .pecos{
     height:400px;
     width:auto;
-    border-radius:100%;
+    border-radius:35%;
     border-style:groove;
     margin-top:30px;
     margin-bottom:30px;
@@ -149,6 +154,7 @@ ul{
     align-items:center;
     background-image: url(images/brick2.jpg);
     justify-content:center;
+
     
 }
 .images-text{
@@ -166,18 +172,38 @@ ul{
     box-shadow:5px rgba(2, 2, 2, 0.7);
     border:3px solid black;
 }
+.white-special{
+    border-radius:100%;
+    background-color:black;
+}
+.under-photo{
+    font-size:30px;
+    border:3px solid black;
+    background:orange;
+    text-align:center;
+    font-family:westish;
+    padding:10px;
+    border-style:solid;
+}
+
+
 
 .image-pair{
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
     align-items:center;
+    margin-left:50px;
+    margin-right:50px;
 
 }
-h2{
-    font-size:40px;
-    font-family:helvetica;
+.wall-shame{
+    display:flex;
+    font-size:70px;
+    color: rgb(0, 0, 0);
+    font-family:riogrande;
     font-weight:bold;
+    text-shadow:5px 5px rgba(98, 98, 98, 0.9);
 }
 .under-photo{
     text-align:center;
