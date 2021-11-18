@@ -13,6 +13,7 @@ body{
     display:flex;
     flex-direction:column;
     justify-content:center;
+    background-color:rgb(19, 48, 82);
 }
 p{
     font-family:helvetica;
@@ -78,7 +79,7 @@ ul{
     justify-content:flex-end;
     gap:20px;
     align-items:center;
-    margin-right:100px;
+    margin-right:10px;
 
 }
 
@@ -86,29 +87,33 @@ ul{
                                                    /* awesome and all awesome sub-parts */
 .awesome{
     display:flex;
-    justify-content:center;
-    gap:50px;
+    align-items:center;
+    justify-content:space-between;
     background-image: url(images/deser.jpg);
     background-size: cover;
-    border-top:3px solid black;
-    border-bottom: 3px solid black;
+    gap:50px;
+    border:3px solid black;
+
 }
 .awesome-left{
-    display:flex;
-    margin-left:200px;
+    flex:1 0 auto;
+    margin-left:100px;
+
+
 }
 
 .awesome-right{
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
-    margin-right:150px;
+    padding:50px;
     background-image: linear-gradient(to right, rgba(221, 221, 20, 0.01),rgba(241, 158, 3, 0.7));
-    margin-top:10px;
-    margin-bottom:10px;
     align-items:center;
-    border:3px solid black;
     border-radius:5%;
+    margin:10px;
+    border:3px solid black;
+    flex:0 1 auto;
+
     
 
 }
@@ -133,7 +138,6 @@ ul{
     font-weight:700;
     font-size:70px;
     color:rgb(255, 255, 255);
-    margin-right:300px;
     text-shadow: 5px 5px black;
 }
 .pecos{
@@ -154,15 +158,15 @@ ul{
     align-items:center;
     background-image: url(images/brick2.jpg);
     justify-content:center;
+    padding:100px;
+    border:3px solid black;
 
     
 }
 .images-text{
     display:flex;
     gap:30px;
-    margin-top:40px;
-    margin-left:150px;
-    margin-right:150px;
+    padding:100px;
 
 }
 .white{
@@ -171,6 +175,7 @@ ul{
     border-style:groove;
     box-shadow:5px rgba(2, 2, 2, 0.7);
     border:3px solid black;
+    border-radius:5%;
 }
 .white-special{
     border-radius:100%;
@@ -179,11 +184,14 @@ ul{
 .under-photo{
     font-size:30px;
     border:3px solid black;
-    background:orange;
+    background:rgba(250, 164, 3, 0.8);
     text-align:center;
     font-family:westish;
     padding:10px;
     border-style:solid;
+    border-radius:3%;
+    height:120px;
+    width:300px;
 }
 
 
@@ -193,7 +201,6 @@ ul{
     flex-direction:column;
     flex-wrap:wrap;
     align-items:center;
-    margin-left:50px;
     margin-right:50px;
 
 }
@@ -210,13 +217,25 @@ ul{
     flex-wrap:wrap;
 }
 
+/* INSPIRING QUOTE ZONE */
+
 .inspiring-quote{
     display:flex;
-    background-color:rgb(0, 26, 255);
+    background-image: url(images/deser.jpg);
     flex-direction:column;
     align-items:center;
     justify-content:center;
+    border:3px solid black;
+    padding:30px 100px 1px;
 }
-.quote{
+.quote,
+.famous
+{
+    display:flex;
     font-size:40px;
+    margin:50px;
+    font-family:westish;
+    color:white;
+    
+
 }
